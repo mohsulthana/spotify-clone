@@ -17,6 +17,8 @@
 		17281667271AB7A100C6CE08 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17281666271AB7A100C6CE08 /* AudioTrack.swift */; };
 		17281669271AB7AD00C6CE08 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17281668271AB7AD00C6CE08 /* Artist.swift */; };
 		1728166B271AB7B800C6CE08 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728166A271AB7B800C6CE08 /* UserProfile.swift */; };
+		1728166D271ABF0300C6CE08 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728166C271ABF0300C6CE08 /* Extensions.swift */; };
+		1728166F271ACC4A00C6CE08 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728166E271ACC4A00C6CE08 /* AuthResponse.swift */; };
 		179D3B1D271AB2B900A73469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D3B1C271AB2B900A73469 /* AppDelegate.swift */; };
 		179D3B1F271AB2B900A73469 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D3B1E271AB2B900A73469 /* SceneDelegate.swift */; };
 		179D3B21271AB2B900A73469 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D3B20271AB2B900A73469 /* HomeViewController.swift */; };
@@ -42,6 +44,8 @@
 		17281666271AB7A100C6CE08 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		17281668271AB7AD00C6CE08 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		1728166A271AB7B800C6CE08 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		1728166C271ABF0300C6CE08 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1728166E271ACC4A00C6CE08 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		179D3B19271AB2B900A73469 /* spotify-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spotify-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		179D3B1C271AB2B900A73469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		179D3B1E271AB2B900A73469 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 				17281666271AB7A100C6CE08 /* AudioTrack.swift */,
 				17281668271AB7AD00C6CE08 /* Artist.swift */,
 				1728166A271AB7B800C6CE08 /* UserProfile.swift */,
+				1728166E271ACC4A00C6CE08 /* AuthResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				179D3B1C271AB2B900A73469 /* AppDelegate.swift */,
 				179D3B1E271AB2B900A73469 /* SceneDelegate.swift */,
 				179D3B25271AB2BB00A73469 /* Assets.xcassets */,
+				1728166C271ABF0300C6CE08 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -257,11 +263,13 @@
 				179D3B37271AB54300A73469 /* TabBarViewController.swift in Sources */,
 				179D3B21271AB2B900A73469 /* HomeViewController.swift in Sources */,
 				17281663271AB77E00C6CE08 /* HapticsManager.swift in Sources */,
+				1728166F271ACC4A00C6CE08 /* AuthResponse.swift in Sources */,
 				17281667271AB7A100C6CE08 /* AudioTrack.swift in Sources */,
 				179D3B3F271AB59F00A73469 /* AuthViewController.swift in Sources */,
 				179D3B1D271AB2B900A73469 /* AppDelegate.swift in Sources */,
 				179D3B3B271AB57500A73469 /* LibraryViewController.swift in Sources */,
 				1728166B271AB7B800C6CE08 /* UserProfile.swift in Sources */,
+				1728166D271ABF0300C6CE08 /* Extensions.swift in Sources */,
 				1728165B271AB6EB00C6CE08 /* PlaylistViewController.swift in Sources */,
 				17281669271AB7AD00C6CE08 /* Artist.swift in Sources */,
 				179D3B1F271AB2B900A73469 /* SceneDelegate.swift in Sources */,
