@@ -19,6 +19,17 @@
 		1728166B271AB7B800C6CE08 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728166A271AB7B800C6CE08 /* UserProfile.swift */; };
 		1728166D271ABF0300C6CE08 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728166C271ABF0300C6CE08 /* Extensions.swift */; };
 		1728166F271ACC4A00C6CE08 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728166E271ACC4A00C6CE08 /* AuthResponse.swift */; };
+		17360000275BAE9D004352ED /* RecommendedTrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736FFFF275BAE9D004352ED /* RecommendedTrackCollectionViewCell.swift */; };
+		1736FFEA275B5E33004352ED /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1736FFE9275B5E33004352ED /* SDWebImage */; };
+		1736FFEC275B5E33004352ED /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1736FFEB275B5E33004352ED /* SDWebImageMapKit */; };
+		1736FFEF275B60D3004352ED /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1736FFEE275B60D3004352ED /* FirebaseAnalytics */; };
+		1736FFF1275B97E7004352ED /* NewReleasesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736FFF0275B97E7004352ED /* NewReleasesResponse.swift */; };
+		1736FFF3275B98F0004352ED /* APIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736FFF2275B98F0004352ED /* APIImage.swift */; };
+		1736FFF5275B9B5E004352ED /* FeaturedPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736FFF4275B9B5E004352ED /* FeaturedPlaylistsResponse.swift */; };
+		1736FFF7275B9D35004352ED /* RecommendationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736FFF6275B9D35004352ED /* RecommendationsResponse.swift */; };
+		1736FFF9275B9E10004352ED /* RecommendedGenresResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736FFF8275B9E10004352ED /* RecommendedGenresResponse.swift */; };
+		1736FFFC275BAE72004352ED /* NewReleasesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736FFFB275BAE72004352ED /* NewReleasesCollectionViewCell.swift */; };
+		1736FFFE275BAE7F004352ED /* FeaturedPlaylistsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736FFFD275BAE7F004352ED /* FeaturedPlaylistsCollectionViewCell.swift */; };
 		179D3B1D271AB2B900A73469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D3B1C271AB2B900A73469 /* AppDelegate.swift */; };
 		179D3B1F271AB2B900A73469 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D3B1E271AB2B900A73469 /* SceneDelegate.swift */; };
 		179D3B21271AB2B900A73469 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D3B20271AB2B900A73469 /* HomeViewController.swift */; };
@@ -31,6 +42,7 @@
 		179D3B41271AB5AE00A73469 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D3B40271AB5AE00A73469 /* WelcomeViewController.swift */; };
 		179D3B43271AB5BB00A73469 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D3B42271AB5BB00A73469 /* SettingsViewController.swift */; };
 		179D3B45271AB5C500A73469 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D3B44271AB5C500A73469 /* ProfileViewController.swift */; };
+		17E4D733271B20DF00D5DFA8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E4D732271B20DF00D5DFA8 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +58,14 @@
 		1728166A271AB7B800C6CE08 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		1728166C271ABF0300C6CE08 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1728166E271ACC4A00C6CE08 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		1736FFF0275B97E7004352ED /* NewReleasesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesResponse.swift; sourceTree = "<group>"; };
+		1736FFF2275B98F0004352ED /* APIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIImage.swift; sourceTree = "<group>"; };
+		1736FFF4275B9B5E004352ED /* FeaturedPlaylistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistsResponse.swift; sourceTree = "<group>"; };
+		1736FFF6275B9D35004352ED /* RecommendationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsResponse.swift; sourceTree = "<group>"; };
+		1736FFF8275B9E10004352ED /* RecommendedGenresResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedGenresResponse.swift; sourceTree = "<group>"; };
+		1736FFFB275BAE72004352ED /* NewReleasesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesCollectionViewCell.swift; sourceTree = "<group>"; };
+		1736FFFD275BAE7F004352ED /* FeaturedPlaylistsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1736FFFF275BAE9D004352ED /* RecommendedTrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedTrackCollectionViewCell.swift; sourceTree = "<group>"; };
 		179D3B19271AB2B900A73469 /* spotify-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spotify-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		179D3B1C271AB2B900A73469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		179D3B1E271AB2B900A73469 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +80,7 @@
 		179D3B40271AB5AE00A73469 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		179D3B42271AB5BB00A73469 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		179D3B44271AB5C500A73469 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		17E4D732271B20DF00D5DFA8 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +88,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1736FFEC275B5E33004352ED /* SDWebImageMapKit in Frameworks */,
+				1736FFEA275B5E33004352ED /* SDWebImage in Frameworks */,
+				1736FFEF275B60D3004352ED /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1736FFFA275BAE56004352ED /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				1736FFFB275BAE72004352ED /* NewReleasesCollectionViewCell.swift */,
+				1736FFFD275BAE7F004352ED /* FeaturedPlaylistsCollectionViewCell.swift */,
+				1736FFFF275BAE9D004352ED /* RecommendedTrackCollectionViewCell.swift */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
 		179D3B10271AB2B900A73469 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +149,7 @@
 		179D3B31271AB31400A73469 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1736FFFA275BAE56004352ED /* Browse */,
 				179D3B27271AB2BB00A73469 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -128,6 +163,12 @@
 				17281668271AB7AD00C6CE08 /* Artist.swift */,
 				1728166A271AB7B800C6CE08 /* UserProfile.swift */,
 				1728166E271ACC4A00C6CE08 /* AuthResponse.swift */,
+				17E4D732271B20DF00D5DFA8 /* Settings.swift */,
+				1736FFF0275B97E7004352ED /* NewReleasesResponse.swift */,
+				1736FFF2275B98F0004352ED /* APIImage.swift */,
+				1736FFF4275B9B5E004352ED /* FeaturedPlaylistsResponse.swift */,
+				1736FFF6275B9D35004352ED /* RecommendationsResponse.swift */,
+				1736FFF8275B9E10004352ED /* RecommendedGenresResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +242,11 @@
 			dependencies = (
 			);
 			name = "spotify-clone";
+			packageProductDependencies = (
+				1736FFE9275B5E33004352ED /* SDWebImage */,
+				1736FFEB275B5E33004352ED /* SDWebImageMapKit */,
+				1736FFEE275B60D3004352ED /* FirebaseAnalytics */,
+			);
 			productName = "spotify-clone";
 			productReference = 179D3B19271AB2B900A73469 /* spotify-clone.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +275,10 @@
 				Base,
 			);
 			mainGroup = 179D3B10271AB2B900A73469;
+			packageReferences = (
+				1736FFE8275B5E33004352ED /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				1736FFED275B60D3004352ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 179D3B1A271AB2B900A73469 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,23 +309,32 @@
 				17281665271AB79700C6CE08 /* Playlist.swift in Sources */,
 				1728165F271AB76800C6CE08 /* AuthManager.swift in Sources */,
 				179D3B41271AB5AE00A73469 /* WelcomeViewController.swift in Sources */,
+				1736FFF9275B9E10004352ED /* RecommendedGenresResponse.swift in Sources */,
 				179D3B45271AB5C500A73469 /* ProfileViewController.swift in Sources */,
 				179D3B37271AB54300A73469 /* TabBarViewController.swift in Sources */,
 				179D3B21271AB2B900A73469 /* HomeViewController.swift in Sources */,
+				17360000275BAE9D004352ED /* RecommendedTrackCollectionViewCell.swift in Sources */,
 				17281663271AB77E00C6CE08 /* HapticsManager.swift in Sources */,
+				1736FFFC275BAE72004352ED /* NewReleasesCollectionViewCell.swift in Sources */,
 				1728166F271ACC4A00C6CE08 /* AuthResponse.swift in Sources */,
+				1736FFF1275B97E7004352ED /* NewReleasesResponse.swift in Sources */,
+				1736FFF3275B98F0004352ED /* APIImage.swift in Sources */,
 				17281667271AB7A100C6CE08 /* AudioTrack.swift in Sources */,
 				179D3B3F271AB59F00A73469 /* AuthViewController.swift in Sources */,
 				179D3B1D271AB2B900A73469 /* AppDelegate.swift in Sources */,
 				179D3B3B271AB57500A73469 /* LibraryViewController.swift in Sources */,
 				1728166B271AB7B800C6CE08 /* UserProfile.swift in Sources */,
 				1728166D271ABF0300C6CE08 /* Extensions.swift in Sources */,
+				1736FFF7275B9D35004352ED /* RecommendationsResponse.swift in Sources */,
 				1728165B271AB6EB00C6CE08 /* PlaylistViewController.swift in Sources */,
 				17281669271AB7AD00C6CE08 /* Artist.swift in Sources */,
 				179D3B1F271AB2B900A73469 /* SceneDelegate.swift in Sources */,
+				17E4D733271B20DF00D5DFA8 /* Settings.swift in Sources */,
+				1736FFFE275BAE7F004352ED /* FeaturedPlaylistsCollectionViewCell.swift in Sources */,
 				17281659271AB6E100C6CE08 /* PlayerViewController.swift in Sources */,
 				1728165D271AB70D00C6CE08 /* SearchResultViewController.swift in Sources */,
 				17281661271AB77200C6CE08 /* APICaller.swift in Sources */,
+				1736FFF5275B9B5E004352ED /* FeaturedPlaylistsResponse.swift in Sources */,
 				179D3B43271AB5BB00A73469 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +545,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1736FFE8275B5E33004352ED /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		1736FFED275B60D3004352ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1736FFE9275B5E33004352ED /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1736FFE8275B5E33004352ED /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		1736FFEB275B5E33004352ED /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1736FFE8275B5E33004352ED /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		1736FFEE275B60D3004352ED /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1736FFED275B60D3004352ED /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 179D3B11271AB2B900A73469 /* Project object */;
 }

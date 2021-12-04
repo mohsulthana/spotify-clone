@@ -13,6 +13,8 @@ final class AuthManager {
     // A static variable is shared through all instances of a class
     static let shared = AuthManager()
     
+    private var refreshingToken = false
+    
     struct Constants {
         static let clientID = "edac07a6af614b4383acd284c62d33d3"
         static let clientSecret = "8f77f76a11e94eb6b6de29e70a794865"
@@ -99,7 +101,28 @@ final class AuthManager {
         task.resume()
     }
     
-    public func refreshIsNeeded(completion: @escaping (Bool) -> Void) {
+    private var onRefreshBlocks = [((String) -> Void)]()
+    
+    // supplies valid token to be used with API Calls
+    public func withValidToken(completion: @escaping (String) -> Void) {
+        guard !refreshingToken else {
+            // append the completion
+            onRefreshBlocks.append(completion)
+            return
+        }
+        
+        if shouldRefreshToken {
+            refreshIsNeeded(completion: { [weak self] success in
+                if let token = self?.accessToken, success {
+                    completion(token)
+                }
+            })
+        } else if let token = accessToken {
+            completion(token)
+        }
+    }
+    
+    public func refreshIsNeeded(completion: ((Bool) -> Void)?) {
         
         guard let refreshToken = self.refreshToken else {
             return
@@ -110,11 +133,13 @@ final class AuthManager {
             return
         }
         
+        refreshingToken = true
+        
         let basicToken = Constants.clientID + ":" + Constants.clientSecret
         let data = basicToken.data(using: .utf8)
         guard let base64String = data?.base64EncodedString() else {
             print("Failure to get base64")
-            completion(false)
+            completion?(false)
             return
         }
         
@@ -131,18 +156,21 @@ final class AuthManager {
         request.setValue("Basic \(base64String)", forHTTPHeaderField: "Authorization")
         
         let task = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] data, _, error in
+            self?.refreshingToken = false
             guard let data = data, error == nil else {
-                completion(false)
+                completion?(false)
                 return
             }
             
             do {
                 let result = try JSONDecoder().decode(AuthResponse.self, from: data)
+                self?.onRefreshBlocks.forEach{ $0(result.access_token) }
+                self?.onRefreshBlocks.removeAll()
                 self?.cacheToken(result: result)
-                completion(true)
+                completion?(true)
             } catch {
                 print(error.localizedDescription)
-                completion(false)
+                completion?(false)
             }
         })
         task.resume()
