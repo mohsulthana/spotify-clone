@@ -41,7 +41,7 @@ final class APICaller {
     }
     
     public func getNewReleases(completion: @escaping ((Result<NewReleasesResponse, Error>)) -> Void) {
-        createRequest(with: URL(string: Constants.baseAPIURL + "/browse/new-releases?limit=1"), type: .GET) { request in
+        createRequest(with: URL(string: Constants.baseAPIURL + "/browse/new-releases?limit=10"), type: .GET) { request in
             let task = URLSession.shared.dataTask(with: request) { data, _, error in
                 guard let data = data, error == nil else {
                     completion(.failure(APIError.failedToGetData))
@@ -66,6 +66,8 @@ final class APICaller {
                     completion(.failure(APIError.failedToGetData))
                     return
                 }
+                
+                print(data)
                 
                 do {
                     let result = try JSONDecoder().decode(FeaturedPlaylistResponse.self, from: data)
